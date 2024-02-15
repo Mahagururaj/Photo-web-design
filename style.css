@@ -1,0 +1,608 @@
+@font-face {
+    font-family: monu;
+    src: url(./Monument/MonumentExtended-Regular.otf);
+}
+* {
+    font-family: 'Times New Roman';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background: #f8f8f8;
+    position: relative;
+    padding-top: 1px;
+}
+.nav{
+    height: 10vh;
+    width: 100% ;
+    margin-top: 50px;
+    border-top : 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav h5{
+    height: 100%;
+    width: 23%;
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+
+}
+.nav h1{
+    height: 100%;
+    width: 30%;
+    letter-spacing: -2px;
+    display: flex;
+    font-family: monu;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.nav h1::after{
+   content:"©" ; 
+   font-family: monu;
+   font-weight: 350;
+   font-size: 1vw;
+   position: absolute;
+   top: 1vw;
+   right:7vw;
+}
+.nav h1::before{
+    content:"model management" ; 
+    font-family: monu;
+    font-weight: 500;
+    font-size: 7px;
+    position: absolute;
+    bottom: 1vw;
+    letter-spacing: 0.1vw;
+    right:8vw;
+}
+.nav h5:nth-last-child(1){
+    width: 12%;
+}
+.center{
+    width: 100%;
+    height: 90%;
+    padding: 4vw;
+    position: relative;
+}
+.contant{
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 187, 255);
+    position: relative;
+
+}
+.contant video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.overlay{
+    height: 55%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 4vw;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text h1{
+    font-family: monu;
+    font-size: 4vw;
+    font-weight: 100;
+    color: #ffff;
+    mix-blend-mode: difference;
+}
+.text h2{
+    font-size: 1.5vw; 
+    padding: 2.5vw 3vw;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.738);
+    border-top: 2.5px solid white;
+    color: #ffff;
+
+}
+.text1{
+    border-top: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vw 0;
+}
+.text1 h4{
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #ffff;
+}
+.text1 img{
+    height: 3vw ;
+
+}
+
+.scroll{
+    height: 40vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.cont{
+    width:110%;
+    height: 100%;
+    display: inline-block;
+    padding: 1vw;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.scroll img {
+    height: 20vh;
+    width: 9.5vw;
+    margin: 2vw;
+    object-fit: cover;
+    object-position: 30% 30%;
+    border-radius: 50%;
+ 
+}
+@keyframes anime {
+    from{
+        transform: translate(0%);
+    }
+    to{
+        transform: translate(-100%);
+    }
+    
+}
+
+.alphabet{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.alphabet h6{
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 5px;
+    border-bottom: 2px solid black;
+
+}
+.alphabet h5{
+    text-transform: uppercase;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    letter-spacing: 5px;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.alphabet h5:hover{
+    font-weight: 500;
+    border: 2px solid rgb(0, 0, 0);
+}
+.page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw;
+}
+.page2 .part1{
+    height: 100%;
+    width:50% ;
+}
+.part1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.part1 h1{
+    font-size: 3vw;
+    padding: 1vw;
+    text-transform: uppercase;
+    font-family: monu;
+}
+
+.page2 .part2{
+    height: 100%;
+    width:46% ;
+}
+.part2 img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.part2-bottom{
+    width: 100%;
+    height: 30%;
+    display: flex;
+}
+.bottom-left{
+    width: 100%;
+    padding: 0.8vw;
+}
+.bottom-right{
+    width: 100%;
+    padding: 0.8vw;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.826);
+}
+.page3{
+    margin-top: 1%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+.page3-left{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.page3-left img{
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.page3-left h1{
+    position: absolute;
+    bottom: 0%;
+
+}
+
+.page3-right{
+    width: 46%;
+    height: 100%;
+    background-image: url(https://images.pexels.com/photos/3134961/pexels-photo-3134961.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+    background-size: cover;
+    background-position: center;
+}
+.page4{
+    width: 100%;
+    padding: 2vw 5vw ;
+    height: 100%;
+}
+.page4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page5{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+}
+.page5>h1{
+    text-align: center;
+    font-family: monu;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 900;
+    margin-bottom: 2%;
+}
+.elem{
+    height: 18vh;
+    width: 100%;
+    /* background: red; */
+    border-top: 2px solid black ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+}
+.elem img{
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    left: 12%;
+    opacity: 0;
+    transition: all ease 0.7s;
+}
+.elem:hover img{
+    opacity: 1;
+    left: 30%;
+    
+}
+.elem h4{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    width: 6%;
+}
+.elem .elem-part2{
+    width: 45%;
+    text-transform: uppercase;
+}
+.elem .elem-part2 h1{
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black ;
+}
+.marqu{
+    width: 100%;
+    padding: 0.8vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    letter-spacing: 0.5px;
+    overflow-y: hidden;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+.marqu h1{
+    display: inline-block;
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 800;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: monu;
+    margin-right: 16px;
+    animation-name: move ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+
+    }
+    
+}
+.footer{
+    width: 100%;
+    height: 100%;
+
+}
+@media (max-width:600px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+
+    .nav {
+        height: 8vh;
+        margin-top: 20px;
+        padding: 5vw;
+    }
+
+    .nav h5 {
+        display: none;
+    }
+
+    .nav h1 {
+        width: 40%;
+        justify-content: flex-start;
+        font-size: 24px;
+    }
+
+    .nav h3 {
+        display: block;
+    }
+
+    .center {
+        width: 100%;
+        height: 40%;
+        padding: 3vw 5vw;
+        position: relative;
+    }
+    .contant video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .overlay {
+        height: 40%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        padding: 4vw;
+    }
+
+    .text h1 {
+        font-family: monu;
+        font-size: 6vw;
+        font-weight: 100;
+        color: #ffff;
+
+    }
+
+    .text h2 {
+        font-size: 5vw;
+
+    }
+
+    .text1 h4 {
+        font-size:3vw;
+        font-weight: 500;
+    }
+
+    .text1 img {
+        height: 5vw;
+    }
+    .scroll {
+        height: 20vh;
+
+    }
+    
+    .cont {
+        width: 250%;
+        height: 100%;
+        animation-duration: 6s;
+    }
+    .scroll img {
+        height: 100px;
+        width: 100px;
+    }
+    .alphabet {
+        padding-left: 75vw;
+        overflow-x: auto;
+    
+    }
+    .alphabet h6{
+        font-size: 5vw;
+    }
+    .page2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0vw 5vw;
+    }
+    
+    .page2 .part1 {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .part1 img {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .part1 h1 {
+        font-size: 4vw;
+    }
+    
+    .page2 .part2 {
+        
+        height: 100%;
+        width: 100%;
+    }
+    
+    .part2 img {
+        margin-top: -60vw;
+        object-fit: cover;
+        object-position: top;
+    }
+    
+    .part2-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+    .page3 {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+
+    }
+    
+    .page3-left {
+        width: 100%;
+        height: 50%;
+        top: 52vw;
+        position: relative;
+    }
+    
+    .page3-left img {
+        width: 46%;
+        position: absolute;
+        top: 42vh;
+    }
+    
+    .page3-left h1 {
+        position: absolute;
+        top: 10%;
+    
+    }
+    
+    .page3-right {
+        width: 100%;
+        height: 50%;
+        top: 99vh;
+    }
+    .page4 {
+        width: 100%;
+        height: 50%;
+        padding: 2vw 5vw;
+        height: 100%;
+    }
+    .page5 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 5vw 4vw;
+    }
+    
+    .page5>h1 {
+        font-size: 7vw;  
+    }
+    
+    .elem img {
+        height: 100px;
+        width: 100px;
+    }
+    .elem h4 {
+        font-size: 4vw;
+    }
+    .elem .elem-part2 h1 {
+        font-size: 3.5vw;
+        font-weight: 500;
+    }
+    
+    .elem:nth-last-child(1) {
+        border-bottom: 2px solid black;
+    }
+    .marqu{
+        width: 100%;
+       margin-top: -15vw;
+    }
+    .marqu h1{
+        font-size: 6vw;
+        animation-duration: 4s;
+       
+    }
+}

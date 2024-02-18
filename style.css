@@ -54,27 +54,14 @@ body {
     position: relative;
 
 }
-.nav h1::after{
-   content:"©" ; 
-   font-family: monu;
-   font-weight: 350;
-   font-size: 1vw;
-   position: absolute;
-   top: 1vw;
-   right:7vw;
-}
-.nav h1::before{
-    content:"model management" ; 
-    font-family: monu;
-    font-weight: 500;
-    font-size: 7px;
-    position: absolute;
-    bottom: 1vw;
-    letter-spacing: 0.1vw;
-    right:8vw;
+.nav h2{
+    display: none;
 }
 .nav h5:nth-last-child(1){
     width: 12%;
+}
+.nav-respon{
+    display: none;
 }
 .center{
     width: 100%;
@@ -140,7 +127,7 @@ body {
 }
 
 .scroll{
-    margin-top: -10vh;
+    margin-top: -5vh;
     height: 30vh;
     width: 100%;
     white-space: nowrap;
@@ -425,13 +412,14 @@ body {
 
 
     .nav {
-        height: 8vh;
         margin-top: 20px;
         padding: 5vw;
     }
 
     .nav h5 {
         display: none;
+        border: none;
+     
     }
 
     .nav h1 {
@@ -439,9 +427,21 @@ body {
         justify-content: flex-start;
         font-size: 24px;
     }
-
-    .nav h3 {
-        display: block;
+    .nav h2{
+        display:block;
+    }
+    .nav-respon{
+        display: none;
+        width: 100%;
+        font-size: 4vw;
+        text-align: center;
+        margin-top: -5vh;
+        border-bottom:2px solid black;
+        transition: all ease 4s;
+    }
+    .nav-respon h5{
+        padding: 1vw;
+        
     }
 
     .center {
